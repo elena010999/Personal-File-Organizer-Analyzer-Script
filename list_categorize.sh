@@ -1,9 +1,8 @@
 #!/bin/bash
 
-echo "Enter directory name to search:"
-read directory_name
+read -p "Enter directory name to search: " directory_name
 
-found_dirs=$(find / -type d -name "$directory_name" 2>/dev/null)
+found_dirs=$(find / -type d -name "$directory_name")
 
 if [ -z "$found_dirs" ]; then
   echo "No directory named '$directory_name' found."

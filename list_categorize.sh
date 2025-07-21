@@ -43,7 +43,6 @@ fi
 echo "Processing directory: $selected_dir"
 directory_list=$(ls $selected_dir)
 echo "List files from $selected_dir: $directory_list"
-#!/bin/bash
 
 declare -A file_categories  # associative array
 

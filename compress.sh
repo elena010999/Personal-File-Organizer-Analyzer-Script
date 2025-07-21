@@ -14,7 +14,7 @@ original_size=$(du -sh "$path" | awk '{print $1}')
 
 # If it's a file
 if [ -f "$path" ]; then
-    echo "📄 File detected: $path"
+    echo "File detected: $path"
     
     # Compress the file using gzip and keep the original
     gzip -k "$path"
